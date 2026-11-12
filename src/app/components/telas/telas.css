@@ -1,0 +1,13 @@
+.nome-telas{
+  display: flex;
+  gap: 50px;
+  text-decoration: underline;
+}
+
+.opcoes{
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  border-bottom: 1px solid gray;
+  gap: 50px;
+}

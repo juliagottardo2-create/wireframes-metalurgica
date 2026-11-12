@@ -1,0 +1,42 @@
+<div class="clientes">
+    <h3>Clientes</h3>
+</div>
+
+<div class="titulo-filtros">
+  <h5>Filtros</h5>
+</div>
+<div class="campo-filtro">
+<app-campo-select label="Status" [opcoes]="opcoesStatus"></app-campo-select>
+<app-campo-select label="Com obra em andamento" [opcoes]="opcoesObras"></app-campo-select>
+
+<div class="campo-minimo">
+   <label for="minimoObras" class="minimoObras">Minimo de obras</label>
+  <input id="minimoObras" name="minimoObras" [(ngModel)]="minimoObras">
+</div>
+
+<div class="campo-botao">
+<app-botao texto="Buscar"></app-botao>
+<app-botao texto="Limpar" (click)="limpar()"></app-botao>
+</div>
+</div>
+
+<div class="resultado">
+    <h4>Resultado</h4>
+
+    <table> 
+        <thead>
+        <tr class="nome-colunas">
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Telefone</th>
+        </tr>
+    </thead>
+        @for (cliente of clientes; track $index){
+            <tr class="dados-clientes">
+                <td>{{cliente.nome}}</td>
+                <td>{{cliente.cpf}}</td>
+                <td>{{cliente.telefone}}</td>
+            </tr>
+        }
+    </table>
+</div>

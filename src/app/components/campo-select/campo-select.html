@@ -1,0 +1,14 @@
+<form>
+    <label>{{label}}</label>
+    <div class="campo-selecao">
+    <select type="select" name="opcoes">
+        @for (opcao of opcoes; track $index){
+            <option [value]="opcao">{{opcao}}</option>
+        }
+    </select>
+</div>
+</form>
+
+
+
+

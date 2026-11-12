@@ -1,0 +1,68 @@
+.campo-filtro{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    border: 1px solid black;
+    width: 90%;
+    padding: 10px;
+    margin: 30px;
+}
+
+.campo-minimo input{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 50px;
+}
+
+.detalhe-filtro fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-botao{
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+}
+
+.titulo-filtros h5{
+    display: flex;
+    margin: 0 0 px;
+}
+
+.clientes h3{
+    display: flex;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.titulo-filtros h5{
+    margin: 0px 55px;  
+    font-weight: bold;
+}
+
+
+.resultado h4{
+    display:flex;
+    margin: 0 30px;
+    font-weight: bold;
+}
+
+table { 
+  width: 90%; 
+  border-collapse: collapse; 
+  margin: 0px 30px;
+}
+
+th { 
+  background: #f0f0f0;
+  color: black; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid black; 
+  text-align: left; 
+}
+
